@@ -82,7 +82,7 @@ function App() {
   };
 
   const handleDelete = async (id) => {
-    const listItems = items.filter((item) => item.id != id);
+    const listItems = items.filter((item) => item.id !== id);
     setItems(listItems);
 
     const deleteOptions = { method: "DELETE" };
